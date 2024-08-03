@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://d1ap0oidbj7q0"]
+
+[ext_resource type="PackedScene" uid="uid://cfri85opwoc1c" path="res://Small Ship.glb" id="1_dajcd"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_c5kl6"]
+size = Vector3(4, 0.5, 2)
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_mqrki"]
+margin = 0.0
+radius = 0.25
+height = 1.015
+
+[node name="Root Scene" instance=ExtResource("1_dajcd")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="RootNode/Ship_Small" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RootNode/Ship_Small/StaticBody3D" index="0"]
+transform = Transform3D(0.01, 0, 0, 0, 0.01, 1.94289e-16, 0, -1.94289e-16, 0.01, 0, 0.00605176, -2.64532e-10)
+shape = SubResource("BoxShape3D_c5kl6")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="RootNode/Ship_Small/StaticBody3D" index="1"]
+transform = Transform3D(0.008, 0, 0, 0, 0.008, 1.94289e-16, 0, -1.94289e-16, 0.008, 0.0138543, 0.0116763, 0.000114795)
+shape = SubResource("CapsuleShape3D_mqrki")

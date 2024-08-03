@@ -1,0 +1,217 @@
+[gd_scene load_steps=72 format=3 uid="uid://dcqtaoem8hrjg"]
+
+[ext_resource type="PackedScene" uid="uid://dr7lpltahjcn2" path="res://grass_2.tscn" id="1_1a342"]
+[ext_resource type="PackedScene" uid="uid://bnbggg7cgwajb" path="res://unit_mansion_2.tscn" id="2_xigur"]
+[ext_resource type="PackedScene" uid="uid://dlpgx7mu17dkd" path="res://grass_hill_2.tscn" id="3_b7css"]
+[ext_resource type="PackedScene" uid="uid://3wqeiqom0tkj" path="res://grass_forest_2.tscn" id="4_a3gdt"]
+[ext_resource type="PackedScene" uid="uid://b4jdx7dcbxqls" path="res://bridge_2.tscn" id="12_0nwdn"]
+[ext_resource type="PackedScene" uid="uid://bm3kmyc77tv70" path="res://building_archery_2.tscn" id="13_gwk8u"]
+[ext_resource type="PackedScene" uid="uid://m46o32db0x6s" path="res://building_cabin_2.tscn" id="14_73msg"]
+[ext_resource type="PackedScene" uid="uid://bex5g7edt8ume" path="res://building_castle_2.tscn" id="15_bsqx8"]
+[ext_resource type="PackedScene" uid="uid://cudjwdpiht1f8" path="res://building_dock_2.tscn" id="16_rbrkr"]
+[ext_resource type="PackedScene" uid="uid://cd4if7kwylyuq" path="res://building_farm_2.tscn" id="17_jbwic"]
+[ext_resource type="PackedScene" uid="uid://da1ew2h77ayss" path="res://building_market_2.tscn" id="18_m0b0g"]
+[ext_resource type="PackedScene" uid="uid://2nc0dm3o41rv" path="res://building_mill_2.tscn" id="19_xi1ub"]
+[ext_resource type="PackedScene" uid="uid://dwp55ii1nfqy8" path="res://building_mine_2.tscn" id="20_pbqnx"]
+[ext_resource type="PackedScene" uid="uid://dl8x3ol8ae7d0" path="res://building_port_2.tscn" id="21_or5gl"]
+[ext_resource type="PackedScene" uid="uid://dyf0y2tln8ed2" path="res://building_sheep_2.tscn" id="22_sy0tu"]
+[ext_resource type="PackedScene" uid="uid://chdnttm3thens" path="res://building_smelter_2.tscn" id="23_blh6n"]
+[ext_resource type="PackedScene" uid="uid://b48420jtean07" path="res://building_tower_2.tscn" id="24_kpa6t"]
+[ext_resource type="PackedScene" uid="uid://c84pww0s133i" path="res://building_village_2.tscn" id="25_nluk4"]
+[ext_resource type="PackedScene" uid="uid://bglg4l0rnmbvp" path="res://building_walls_2.tscn" id="26_5vnxi"]
+[ext_resource type="PackedScene" uid="uid://bpl364f4ab6tj" path="res://building_wall_2.tscn" id="27_mijtn"]
+[ext_resource type="PackedScene" uid="uid://dkpnwakokoue6" path="res://building_watermill_2.tscn" id="28_mvcpj"]
+[ext_resource type="PackedScene" uid="uid://dfmpfu12avgxf" path="res://building_wizard_tower_2.tscn" id="29_kek13"]
+[ext_resource type="PackedScene" uid="uid://b8pa1oul3w6g4" path="res://dirt_2.tscn" id="30_u25wh"]
+[ext_resource type="PackedScene" uid="uid://c7irc85h2od84" path="res://dirt_lumber_2.tscn" id="31_rwodh"]
+[ext_resource type="PackedScene" uid="uid://fxmlo03j7865" path="res://path_corner_2.tscn" id="32_8p87u"]
+[ext_resource type="PackedScene" uid="uid://by3cth67nsqmh" path="res://path_corner_sharp_2.tscn" id="33_a1ovi"]
+[ext_resource type="PackedScene" uid="uid://bqwwma3uhrsn8" path="res://path_end_2.tscn" id="34_bf4i4"]
+[ext_resource type="PackedScene" uid="uid://cti4y5jo3yejt" path="res://path_crossing_2.tscn" id="35_ydi2l"]
+[ext_resource type="PackedScene" uid="uid://dhi6jn54is7yc" path="res://path_intersection_a_2.tscn" id="36_lwd0r"]
+[ext_resource type="PackedScene" uid="uid://dlxfaowuqvxr8" path="res://path_intersection_b_2.tscn" id="37_3y2ew"]
+[ext_resource type="PackedScene" uid="uid://d3oqr8jq1eqi0" path="res://path_intersection_c_2.tscn" id="38_xj5tk"]
+[ext_resource type="PackedScene" uid="uid://d2kapq8is1e0" path="res://path_intersection_d_2.tscn" id="39_jkst5"]
+[ext_resource type="PackedScene" uid="uid://cba8k85uuew88" path="res://path_intersection_e_2.tscn" id="40_y34ar"]
+[ext_resource type="PackedScene" uid="uid://ddfcuokvptc04" path="res://path_intersection_f_2.tscn" id="41_y4b2g"]
+[ext_resource type="PackedScene" uid="uid://bg37mljkl4bhn" path="res://path_intersection_g_2.tscn" id="42_k3kgi"]
+[ext_resource type="PackedScene" uid="uid://cj3y585qug60v" path="res://path_intersection_h_2.tscn" id="43_eqd5n"]
+[ext_resource type="PackedScene" uid="uid://c0h6ngw1i1j1g" path="res://path_square_2.tscn" id="44_gt03j"]
+[ext_resource type="PackedScene" uid="uid://dy6m5xkvbg5mj" path="res://path_square_end_2.tscn" id="45_tc6ia"]
+[ext_resource type="PackedScene" uid="uid://cvvsew0nswtui" path="res://path_start_2.tscn" id="46_nbvxq"]
+[ext_resource type="PackedScene" uid="uid://huqyvg1ejcyr" path="res://path_straight_2.tscn" id="47_k75xo"]
+[ext_resource type="PackedScene" uid="uid://b6cdovl00o5cs" path="res://river_corner_2.tscn" id="48_o7ch2"]
+[ext_resource type="PackedScene" uid="uid://cy2t8if6h8vfh" path="res://river_corner_sharp_2.tscn" id="49_j1fu3"]
+[ext_resource type="PackedScene" uid="uid://diryy2qcevylm" path="res://river_crossing_2.tscn" id="50_7xiqm"]
+[ext_resource type="PackedScene" uid="uid://byhjk8jq1fmwj" path="res://river_end_2.tscn" id="51_mdw4i"]
+[ext_resource type="PackedScene" uid="uid://cwguqhxag0k70" path="res://river_intersection_a_2.tscn" id="52_hghnr"]
+[ext_resource type="PackedScene" uid="uid://du7jf0m7yhjyq" path="res://river_intersection_b_2.tscn" id="53_3odx8"]
+[ext_resource type="PackedScene" uid="uid://ddjerjmcircyb" path="res://river_intersection_c_2.tscn" id="54_ld5mg"]
+[ext_resource type="PackedScene" uid="uid://bd1b5e1kivkx8" path="res://river_intersection_d_2.tscn" id="55_6flsu"]
+[ext_resource type="PackedScene" uid="uid://wid2t2noqill" path="res://river_intersection_e_2.tscn" id="56_yfhcr"]
+[ext_resource type="PackedScene" uid="uid://bfxckc27s1u5d" path="res://river_intersection_f_2.tscn" id="57_kfe2m"]
+[ext_resource type="PackedScene" uid="uid://bkt4kmhgnueqi" path="res://river_intersection_g_2.tscn" id="58_j7jay"]
+[ext_resource type="PackedScene" uid="uid://ssa4xb750k18" path="res://river_intersection_h_2.tscn" id="59_xifdy"]
+[ext_resource type="PackedScene" uid="uid://qailteird3y2" path="res://river_start_2.tscn" id="60_3fdjj"]
+[ext_resource type="PackedScene" uid="uid://ui4ifqqt4tcf" path="res://river_straight_2.tscn" id="61_b1b65"]
+[ext_resource type="PackedScene" uid="uid://bv05medducshq" path="res://kenney_hexagon-kit/Models/GLB format/unit-house.glb" id="62_d8omt"]
+[ext_resource type="PackedScene" uid="uid://kkl4x077yxm4" path="res://sand_2.tscn" id="62_hpopw"]
+[ext_resource type="PackedScene" uid="uid://ceom6ka52nc62" path="res://sand_desert_2.tscn" id="63_30tul"]
+[ext_resource type="PackedScene" uid="uid://ccoxjvf682lpj" path="res://kenney_hexagon-kit/Models/GLB format/unit-mill.glb" id="64_6rjh2"]
+[ext_resource type="PackedScene" uid="uid://sqhqx3q57juu" path="res://sand_rocks_2.tscn" id="64_n0q1p"]
+[ext_resource type="PackedScene" uid="uid://b838dd6rvvqi5" path="res://stone_2.tscn" id="65_2taxs"]
+[ext_resource type="PackedScene" uid="uid://dklc0kd5s5kq1" path="res://kenney_hexagon-kit/Models/GLB format/unit-ship-large.glb" id="65_60tbr"]
+[ext_resource type="PackedScene" uid="uid://dbtagyo7f2jr2" path="res://kenney_hexagon-kit/Models/GLB format/unit-ship.glb" id="66_ho04i"]
+[ext_resource type="PackedScene" uid="uid://dghlmhuh0cti8" path="res://stone_hill_2.tscn" id="66_mjwr1"]
+[ext_resource type="PackedScene" uid="uid://ctdjal8qqor8f" path="res://stone_mountain_2.tscn" id="67_3hx5n"]
+[ext_resource type="PackedScene" uid="uid://bjukw5c27iodj" path="res://kenney_hexagon-kit/Models/GLB format/unit-tower.glb" id="67_k8l7y"]
+[ext_resource type="PackedScene" uid="uid://bggeqek4atxau" path="res://stone_rocks_2.tscn" id="68_hsu1f"]
+[ext_resource type="PackedScene" uid="uid://cada1vchg8kpg" path="res://kenney_hexagon-kit/Models/GLB format/unit-tree.glb" id="68_tcvqa"]
+[ext_resource type="PackedScene" uid="uid://w5v5y8jw8vnc" path="res://kenney_hexagon-kit/Models/GLB format/unit-wall-tower.glb" id="69_cq4wf"]
+[ext_resource type="PackedScene" uid="uid://1i8u46wfg8xs" path="res://water_2.tscn" id="69_wbfw2"]
+[ext_resource type="PackedScene" uid="uid://b2jgvgnnmuqq8" path="res://water_rocks_2.tscn" id="70_rrjku"]
+[ext_resource type="PackedScene" uid="uid://bkbj3u6vreyye" path="res://water_island_2.tscn" id="71_hxvdi"]
+
+[node name="island_1_new_tiles" type="Node3D"]
+
+[node name="grass2" parent="." instance=ExtResource("1_1a342")]
+
+[node name="unit-mansion2" parent="." instance=ExtResource("2_xigur")]
+
+[node name="grass-hill2" parent="." instance=ExtResource("3_b7css")]
+
+[node name="grass-forest2" parent="." instance=ExtResource("4_a3gdt")]
+
+[node name="unit-house2" parent="." instance=ExtResource("62_d8omt")]
+
+[node name="unit-mill2" parent="." instance=ExtResource("64_6rjh2")]
+
+[node name="unit-ship-large2" parent="." instance=ExtResource("65_60tbr")]
+
+[node name="unit-ship2" parent="." instance=ExtResource("66_ho04i")]
+
+[node name="unit-tower2" parent="." instance=ExtResource("67_k8l7y")]
+
+[node name="unit-tree2" parent="." instance=ExtResource("68_tcvqa")]
+
+[node name="unit-wall-tower2" parent="." instance=ExtResource("69_cq4wf")]
+
+[node name="bridge2" parent="." instance=ExtResource("12_0nwdn")]
+
+[node name="building-archery2" parent="." instance=ExtResource("13_gwk8u")]
+
+[node name="building-cabin2" parent="." instance=ExtResource("14_73msg")]
+
+[node name="building-castle2" parent="." instance=ExtResource("15_bsqx8")]
+
+[node name="building-dock2" parent="." instance=ExtResource("16_rbrkr")]
+
+[node name="building-farm2" parent="." instance=ExtResource("17_jbwic")]
+
+[node name="building-market2" parent="." instance=ExtResource("18_m0b0g")]
+
+[node name="building-mill2" parent="." instance=ExtResource("19_xi1ub")]
+
+[node name="building-mine2" parent="." instance=ExtResource("20_pbqnx")]
+
+[node name="building-port2" parent="." instance=ExtResource("21_or5gl")]
+
+[node name="building-sheep2" parent="." instance=ExtResource("22_sy0tu")]
+
+[node name="building-smelter2" parent="." instance=ExtResource("23_blh6n")]
+
+[node name="building-tower2" parent="." instance=ExtResource("24_kpa6t")]
+
+[node name="building-village2" parent="." instance=ExtResource("25_nluk4")]
+
+[node name="building-walls2" parent="." instance=ExtResource("26_5vnxi")]
+
+[node name="building-wall2" parent="." instance=ExtResource("27_mijtn")]
+
+[node name="building-watermill2" parent="." instance=ExtResource("28_mvcpj")]
+
+[node name="building-wizard-tower2" parent="." instance=ExtResource("29_kek13")]
+
+[node name="dirt2" parent="." instance=ExtResource("30_u25wh")]
+
+[node name="dirt-lumber2" parent="." instance=ExtResource("31_rwodh")]
+
+[node name="path-corner2" parent="." instance=ExtResource("32_8p87u")]
+
+[node name="path-corner-sharp2" parent="." instance=ExtResource("33_a1ovi")]
+
+[node name="path-end2" parent="." instance=ExtResource("34_bf4i4")]
+
+[node name="path-crossing2" parent="." instance=ExtResource("35_ydi2l")]
+
+[node name="path-intersectionA2" parent="." instance=ExtResource("36_lwd0r")]
+
+[node name="path-intersectionB2" parent="." instance=ExtResource("37_3y2ew")]
+
+[node name="path-intersectionC2" parent="." instance=ExtResource("38_xj5tk")]
+
+[node name="path-intersectionD2" parent="." instance=ExtResource("39_jkst5")]
+
+[node name="path-intersectionE2" parent="." instance=ExtResource("40_y34ar")]
+
+[node name="path-intersectionF2" parent="." instance=ExtResource("41_y4b2g")]
+
+[node name="path-intersectionG2" parent="." instance=ExtResource("42_k3kgi")]
+
+[node name="path-intersectionH2" parent="." instance=ExtResource("43_eqd5n")]
+
+[node name="path-square2" parent="." instance=ExtResource("44_gt03j")]
+
+[node name="path-square-end2" parent="." instance=ExtResource("45_tc6ia")]
+
+[node name="path-start2" parent="." instance=ExtResource("46_nbvxq")]
+
+[node name="path-straight2" parent="." instance=ExtResource("47_k75xo")]
+
+[node name="river-corner2" parent="." instance=ExtResource("48_o7ch2")]
+
+[node name="river-corner-sharp2" parent="." instance=ExtResource("49_j1fu3")]
+
+[node name="river-crossing2" parent="." instance=ExtResource("50_7xiqm")]
+
+[node name="river-end2" parent="." instance=ExtResource("51_mdw4i")]
+
+[node name="river-intersectionA2" parent="." instance=ExtResource("52_hghnr")]
+
+[node name="river-intersectionB2" parent="." instance=ExtResource("53_3odx8")]
+
+[node name="river-intersectionC2" parent="." instance=ExtResource("54_ld5mg")]
+
+[node name="river-intersectionD2" parent="." instance=ExtResource("55_6flsu")]
+
+[node name="river-intersectionE2" parent="." instance=ExtResource("56_yfhcr")]
+
+[node name="river-intersectionF2" parent="." instance=ExtResource("57_kfe2m")]
+
+[node name="river-intersectionG2" parent="." instance=ExtResource("58_j7jay")]
+
+[node name="river-intersectionH2" parent="." instance=ExtResource("59_xifdy")]
+
+[node name="river-start2" parent="." instance=ExtResource("60_3fdjj")]
+
+[node name="river-straight2" parent="." instance=ExtResource("61_b1b65")]
+
+[node name="sand2" parent="." instance=ExtResource("62_hpopw")]
+
+[node name="sand-desert2" parent="." instance=ExtResource("63_30tul")]
+
+[node name="sand-rocks2" parent="." instance=ExtResource("64_n0q1p")]
+
+[node name="stone2" parent="." instance=ExtResource("65_2taxs")]
+
+[node name="stone-hill2" parent="." instance=ExtResource("66_mjwr1")]
+
+[node name="stone-mountain2" parent="." instance=ExtResource("67_3hx5n")]
+
+[node name="stone-rocks2" parent="." instance=ExtResource("68_hsu1f")]
+
+[node name="water2" parent="." instance=ExtResource("69_wbfw2")]
+
+[node name="water-rocks2" parent="." instance=ExtResource("70_rrjku")]
+
+[node name="water-island2" parent="." instance=ExtResource("71_hxvdi")]

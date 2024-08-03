@@ -1,0 +1,80 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="high quality"
+run/main_scene="res://test_place.tscn"
+config/features=PackedStringArray("4.2", "Mobile")
+config/icon="res://icon.svg"
+
+[autoload]
+
+DialogueQuest="*res://addons/dialogue_quest/scripts/dialogue_quest_interface.gd"
+
+[dialogue_quest]
+
+data_directory=&"res://dialogue_quest/"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/virtual_joystick/plugin.cfg")
+
+[github_to_itch]
+
+config/itch_username=""
+config/itch_project_name=""
+
+[input]
+
+chai_drink={
+"deadzone": 0.5,
+"events": []
+}
+ssit={
+"deadzone": 0.5,
+"events": []
+}
+right={
+"deadzone": 0.5,
+"events": []
+}
+left={
+"deadzone": 0.5,
+"events": []
+}
+up={
+"deadzone": 0.5,
+"events": []
+}
+down={
+"deadzone": 0.5,
+"events": []
+}
+c={
+"deadzone": 0.5,
+"events": []
+}
+jump={
+"deadzone": 0.5,
+"events": []
+}
+Attackk={
+"deadzone": 0.5,
+"events": []
+}
+
+[physics]
+
+3d/default_gravity=16.0
+
+[rendering]
+
+anti_aliasing/quality/use_debanding=true

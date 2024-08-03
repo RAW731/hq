@@ -1,0 +1,56 @@
+[gd_scene load_steps=12 format=3 uid="uid://c6u32ifnbgu4d"]
+
+[ext_resource type="Texture2D" uid="uid://cbinw1cvtc3ds" path="res://file (1).jpg" id="1_mybcu"]
+[ext_resource type="PackedScene" uid="uid://3reucei7bqao" path="res://player.tscn" id="3_74m7f"]
+[ext_resource type="PackedScene" uid="uid://c8yjx5ap7v12u" path="res://node_3d.tscn" id="4_341bp"]
+[ext_resource type="PackedScene" uid="uid://dmsiro8mhgnns" path="res://camera_controller.tscn" id="4_jw11j"]
+[ext_resource type="PackedScene" uid="uid://4ox1kdc6g0fj" path="res://port.tscn" id="6_enay8"]
+[ext_resource type="PackedScene" uid="uid://b1351w122s10s" path="res://quest_man_1.tscn" id="6_w1xln"]
+[ext_resource type="PackedScene" uid="uid://wqygqxbvcafm" path="res://enemy.tscn" id="8_eg0nb"]
+[ext_resource type="PackedScene" uid="uid://bep5o4in1vs27" path="res://WaterVFX.tscn" id="8_jrsag"]
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_4531r"]
+panorama = ExtResource("1_mybcu")
+
+[sub_resource type="Sky" id="Sky_m5p4c"]
+sky_material = SubResource("PanoramaSkyMaterial_4531r")
+
+[sub_resource type="Environment" id="Environment_ys1w4"]
+background_mode = 2
+sky = SubResource("Sky_m5p4c")
+sky_custom_fov = 99.0
+tonemap_mode = 2
+glow_enabled = true
+
+[node name="test place" type="Node3D"]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866025, -0.383022, 0.321394, 0, 0.642788, 0.766044, -0.5, 0.663414, -0.55667, 0, 0, 0)
+shadow_enabled = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_ys1w4")
+
+[node name="Node3D" parent="." instance=ExtResource("4_341bp")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, -39.2505, 30.1853, 0)
+
+[node name="player" parent="." instance=ExtResource("3_74m7f")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -15.985, 35.226, 0)
+
+[node name="CameraController" parent="." instance=ExtResource("4_jw11j")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -15.93, 35.22, 0)
+
+[node name="port" parent="." instance=ExtResource("6_enay8")]
+transform = Transform3D(-3.49691e-07, 0, 8, 0, 8, 0, -8, 0, -3.49691e-07, 9.85227, 30.7416, 19.0746)
+
+[node name="quest man 1" parent="." instance=ExtResource("6_w1xln")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38.1213, 34.4003, 33.0125)
+
+[node name="CharacterBody3D" parent="." instance=ExtResource("8_eg0nb")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -68.7342, 34.835, 16.7578)
+
+[node name="Root4" parent="." groups=["water"] instance=ExtResource("8_jrsag")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 39.8252, 29.0086, 0.733498)
+
+[node name="Root2" parent="." groups=["water"] instance=ExtResource("8_jrsag")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 40.6491, 29.0086, 100.643)

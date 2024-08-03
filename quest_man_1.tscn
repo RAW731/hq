@@ -1,0 +1,115 @@
+[gd_scene load_steps=15 format=3 uid="uid://b1351w122s10s"]
+
+[sub_resource type="ORMMaterial3D" id="ORMMaterial3D_onny1"]
+cull_mode = 2
+shading_mode = 0
+albedo_color = Color(0.333638, 0, 0.0420443, 1)
+grow_amount = 0.01
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_jud21"]
+
+[sub_resource type="ORMMaterial3D" id="ORMMaterial3D_wjh2y"]
+albedo_color = Color(0.438172, 0.0720158, 0, 1)
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_pxson"]
+
+[sub_resource type="ORMMaterial3D" id="ORMMaterial3D_bp8ik"]
+
+[sub_resource type="ORMMaterial3D" id="ORMMaterial3D_brevf"]
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="ORMMaterial3D" id="ORMMaterial3D_6kkdw"]
+
+[sub_resource type="ORMMaterial3D" id="ORMMaterial3D_1xjn2"]
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="ORMMaterial3D" id="ORMMaterial3D_qxy8l"]
+shading_mode = 0
+albedo_color = Color(0.0942816, 0.0942816, 0.0942816, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_35u84"]
+bottom_radius = 1.016
+height = 0.576
+
+[sub_resource type="ORMMaterial3D" id="ORMMaterial3D_skdn5"]
+albedo_color = Color(0.165492, 0.165492, 0.165492, 1)
+
+[sub_resource type="Animation" id="Animation_6l742"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("body:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_uf6wo"]
+resource_name = "idle"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("body:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, 0.07, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_gedn0"]
+_data = {
+"RESET": SubResource("Animation_6l742"),
+"idle": SubResource("Animation_uf6wo")
+}
+
+[node name="quest man 1" type="Node3D"]
+
+[node name="body" type="MeshInstance3D" parent="."]
+material_override = SubResource("ORMMaterial3D_onny1")
+mesh = SubResource("CapsuleMesh_jud21")
+surface_material_override/0 = SubResource("ORMMaterial3D_wjh2y")
+
+[node name="eye" type="MeshInstance3D" parent="body"]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0.170093, 0.430734, -0.437285)
+mesh = SubResource("CapsuleMesh_pxson")
+surface_material_override/0 = SubResource("ORMMaterial3D_bp8ik")
+
+[node name="inside eye" type="MeshInstance3D" parent="body/eye"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0.0348232, 0, -0.419724)
+mesh = SubResource("CapsuleMesh_pxson")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("ORMMaterial3D_brevf")
+
+[node name="eye2" type="MeshInstance3D" parent="body"]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, -0.178721, 0.430734, -0.437285)
+mesh = SubResource("CapsuleMesh_pxson")
+surface_material_override/0 = SubResource("ORMMaterial3D_6kkdw")
+
+[node name="inside eye" type="MeshInstance3D" parent="body/eye2"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0.019183, 0, -0.419724)
+mesh = SubResource("CapsuleMesh_pxson")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("ORMMaterial3D_1xjn2")
+
+[node name="hats" type="Node3D" parent="body"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="body/hats"]
+transform = Transform3D(0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, 0, 0.830549, 0)
+material_override = SubResource("ORMMaterial3D_qxy8l")
+mesh = SubResource("CylinderMesh_35u84")
+surface_material_override/0 = SubResource("ORMMaterial3D_skdn5")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_gedn0")
+}
+autoplay = "idle"

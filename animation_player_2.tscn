@@ -1,0 +1,32 @@
+[gd_scene load_steps=6 format=3 uid="uid://dpn2iu0r2k1gc"]
+
+[ext_resource type="Animation" uid="uid://ik3hy2erb4uy" path="res://tantalu.res" id="1_nfvy5"]
+[ext_resource type="Animation" uid="uid://cmapnvamlv3na" path="res://tantalus/walk-normal.res" id="2_xpfh0"]
+
+[sub_resource type="Animation" id="Animation_6x88i"]
+length = 0.001
+
+[sub_resource type="Animation" id="Animation_d8mhu"]
+resource_name = "attack"
+length = 3.0
+loop_mode = 1
+tracks/0/type = "rotation_3d"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sketchfab_model/root/GLTF_SceneRootNode/npc-m-tantalus-pilot_102/GLTF_created_0/Skeleton3D:CC_Base_R_Clavicle_91")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, 0.0637154, -0.126127, 0.805688, 0.575238, 0.2, 1, -0.145413, 0.149122, 0.809804, 0.548485, 0.4, 1, -0.43107, 0.817341, 0.317524, 0.212863, 1, 1, -0.384313, 0.47669, 0.675713, 0.410466, 1.9, 1, -0.25908, 0.0809944, 0.830025, 0.487212)
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_k7v2p"]
+_data = {
+"RESET": SubResource("Animation_6x88i"),
+"attack": SubResource("Animation_d8mhu"),
+"idle": ExtResource("1_nfvy5"),
+"walk-normal": ExtResource("2_xpfh0")
+}
+
+[node name="AnimationPlayer2" type="AnimationPlayer"]
+libraries = {
+"": SubResource("AnimationLibrary_k7v2p")
+}

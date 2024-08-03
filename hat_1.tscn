@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://dodrnt3nwdyqe"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_5dt05"]
+top_radius = 0.415
+bottom_radius = 0.732
+height = 0.2
+
+[sub_resource type="ORMMaterial3D" id="ORMMaterial3D_3c48o"]
+albedo_color = Color(0.830698, 0.683889, 0.453107, 1)
+
+[node name="hat1" type="MeshInstance3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00204855, 0.948011, 0.0145671)
+mesh = SubResource("CylinderMesh_5dt05")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("ORMMaterial3D_3c48o")
