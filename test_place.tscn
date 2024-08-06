@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://c6u32ifnbgu4d"]
+[gd_scene load_steps=14 format=3 uid="uid://c6u32ifnbgu4d"]
 
 [ext_resource type="Texture2D" uid="uid://cbinw1cvtc3ds" path="res://file (1).jpg" id="1_mybcu"]
 [ext_resource type="PackedScene" uid="uid://3reucei7bqao" path="res://player.tscn" id="3_74m7f"]
@@ -8,6 +8,8 @@
 [ext_resource type="PackedScene" uid="uid://b1351w122s10s" path="res://quest_man_1.tscn" id="6_w1xln"]
 [ext_resource type="PackedScene" uid="uid://wqygqxbvcafm" path="res://enemy.tscn" id="8_eg0nb"]
 [ext_resource type="PackedScene" uid="uid://bep5o4in1vs27" path="res://WaterVFX.tscn" id="8_jrsag"]
+[ext_resource type="PackedScene" uid="uid://b18hu18lhry1q" path="res://boat.tscn" id="9_upcw5"]
+[ext_resource type="Script" path="res://boat.gd" id="10_dfexa"]
 
 [sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_4531r"]
 panorama = ExtResource("1_mybcu")
@@ -54,3 +56,9 @@ transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 39.8252, 29.0086, 0.733498
 
 [node name="Root2" parent="." groups=["water"] instance=ExtResource("8_jrsag")]
 transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 40.6491, 29.0086, 100.643)
+
+[node name="boat" parent="." instance=ExtResource("9_upcw5")]
+transform = Transform3D(0.998673, -0.0514993, 0, 0.0514993, 0.998673, 0, 0, 0, 1, 10.4906, 31.9887, 0)
+collision_layer = 5
+collision_mask = 5
+script = ExtResource("10_dfexa")
